@@ -9,6 +9,11 @@ export enum ClientState {
   NOT_PLAYING,
 }
 
+export enum DownloadingState {
+  DOWNLOADING,
+  NOT_DOWNLOADING,
+}
+
 type ClientStateEvent = {
   type: ClientEventType.STATE;
   state: ClientState;
